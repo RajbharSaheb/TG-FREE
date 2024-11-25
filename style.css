@@ -1,59 +1,61 @@
 body {
-  background-color: #000;
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px;
 }
 
-.hacked-container {
-  width: 80%;
-  margin: 40px auto;
-  background-color: #141414;
-  padding: 20px;
-  border: 1px solid #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  color: #ff0000;
-  font-size: 36px;
-  margin-bottom: 10px;
+    color: #333;
 }
 
-p {
-  color: #0f0;
-  font-size: 18px;
-  margin-bottom: 20px;
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.typing-effect {
-  font-size: 24px;
-  color: #0f0;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
-#cursor {
-  animation: blink 1s infinite;
+button:hover {
+    background-color: #45a049;
 }
 
-@keyframes blink {
-  0% {
-    opacity: 1;
+#imageContainer {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d9534f;
   }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#shutdown-btn {
-  background-color: #ff0000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#shutdown-btn:hover {
-  background-color: #ff3333;
-}
