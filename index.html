@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hacked!</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="hacked-container">
-    <h1>YOUR DEVICE HAS BEEN HACKED!</h1>
-    <p>Your personal data has been compromised. Do not attempt to shut down your device.</p>
-    <div class="typing-effect">
-      <span id="typing-text">Initializing hack sequence...</span>
-      <span id="cursor">|</span>
+    <div class="container">
+        <h1>AI Image Generator</h1>
+        <input type="text" id="promptInput" placeholder="Enter a description..." />
+        <button id="generateButton">Generate Image</button>
+        <div id="imageContainer"></div>
+        <div id="loading" class="hidden">Generating image...</div>
     </div>
-    <button id="shutdown-btn">SHUT DOWN DEVICE</button>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
